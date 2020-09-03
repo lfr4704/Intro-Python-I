@@ -2,3 +2,10 @@
 # (try doing the same thing in the JS console and see what it outputs)
 
 # YOUR CODE HERE
+
+number = 2**65536
+
+number2 = pow(2,65536)
+
+#print(number)
+print(number2)
