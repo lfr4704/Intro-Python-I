@@ -20,4 +20,4 @@ print('x is %s, y is %s, z is %s' %(x, y, z))
 print('x is {}, y is {}, z is {}'.format(x, y, z))
 
 # Finally, print the same thing using an f-string
-print(f'x is {x}, y is {y}, z is {z}')
+print(f'x is {x}, y is {y:.3f}, z is {z}')
