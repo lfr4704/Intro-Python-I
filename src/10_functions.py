@@ -3,13 +3,21 @@
 # YOUR CODE HERE
 
 # Read a number from the keyboard
-num = None
+
+# def take_input():
+#     try:
+#         num = int(input("Enter a number: "))
+#         print(num)
+#     except ValueError:
+#         print("This entry is invalid")
+
 def take_input():
-    num = input("Enter a number: ")
-    num = int(num)
-    if not isinstance(num, int):
-        print("This entry is invalid")
-    return num
+        num = input("Enter a number: ")
+        if num.isdigit():
+            return int(num)
+        else:
+            print("This entry is invalid")
+
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
@@ -20,7 +28,6 @@ def check_if_even(num):
         print(f'{num} is a even number!')
     else:
         print(f'{num} is not an even number :(!')
-    return num
 
-take_input()
-check_if_even(num)
+#take_input()
+check_if_even(take_input())
