@@ -27,6 +27,9 @@ print out a calendar for April in 2015, but if you omit either the year or both 
 it should use today’s date to get the month and year.
 """
 
+#see reference for *args vs sys.argv
+#https://stackoverflow.com/questions/11999116/python-going-with-argv-or-arg#:~:text=argv%20is%20a%20list%20containing,to%20be%20%22argument%200%22.&text=*arg%20is%20syntax%20used%20for,this%20syntax%20when%20passing%20sys.
+
 import sys
 import calendar
 from datetime import datetime
