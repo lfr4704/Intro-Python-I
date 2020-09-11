@@ -58,7 +58,7 @@ print(f3(8))     # Should print 9
 
 def f4(**kwargs):
     for key,value in kwargs.items():
-        return f'key: {key}, value: {value}'
+        print(f'key: {key}, value: {value}')
 
 # Should print
 # key: a, value: 12
@@ -77,4 +77,4 @@ d = {
 }
 
 # How do you have to modify the f4 call below to make this work?
-f4(moster = d)
+f4(**d)
